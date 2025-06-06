@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do filme</title>
+    <link rel="stylesheet" href="assets/css/detalhes.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+<body>
+    <header class="header">
+        <h1> <a class="logo" href="index.html">The Catalogue</a></h1>
+      </header>
+
+    <div id="tela"></div>
+
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12">
+              <h3 style="margin-top: -5%;">Informações do aluno:</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h4>Sobre</h4>
+            </div>
+            <div class="col-12 col-md-6">
+              <h4>Autoria</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              &copy; 2025 | Todos os direitos reservados  
+              <p >Bem-vindo ao The Catalogue, o seu guia definitivo para o mundo do cinema!
+                Se você é apaixonado por filmes e está sempre em busca de novas produções para assistir, você chegou ao lugar certo! Nosso site oferece um catálogo completo com títulos de diversos gêneros, desde os clássicos inesquecíveis até os lançamentos mais recentes. Aqui, você pode explorar, descobrir e escolher o que assistir de maneira rápida e prática.            
+                Fique à vontade para navegar e se perder nesse universo cinematográfico conosco. Não importa o tipo de filme que você procura – temos opções para todos os gostos!
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <img src="http://localhost:3000/assets/img/eu-removebg-preview.png" style="max-width: 50%; max-height: vh;" alt="eu">
+                </div>
+                <div class="col-12 col-md-6">
+                  <strong>Aluno: </strong>Kauã Felipe Soares Silva<br>
+                  <strong>Curso: </strong>Sistemas de Informação<br>
+                  <strong>Turma: </strong>Manhã<br>
+                  &copy; 2025 | Todos os direitos reservados  
+                  <h5>Redes Sociais</h5>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <a href="https://instagram.com/good4kafe/"><img style="max-width: 40%;" src="http://localhost:3000/assets/img/Instagram_icon.png.webp" alt=""></a></p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <a href="https://github.com/puckaua"><img style="max-width: 40%;" src="http://localhost:3000/assets/img/github.png"></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    <script>
+      fetch ('http://localhost:3000/filmes')
+        .then(res => res.json())
+        .then(filmes => {
+          let params = new URLSearchParams(location.search)
+          let id = params.get('id')
+          filme = filmes.find (function (elem) {return elem.id == id})
+          if (filme) {
+              tela.innerHTML = `
+                                  <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;">Detalhes do filme</h1>
+                                  <div style="width: 100%; display: flex; justify-content: center; margin: 0.1rem 0;">
+                                      <hr style="width: 80%; max-width: 900px; border: 2px solid rgb(81,0,0);">
+                                  </div>
+                                  <div id="img-container"><img id=filme-detalhe src="${filme.imagem_pincipal}"></div> <br>
+                                  <div style="width: 100%; display: flex; justify-content: center; margin: 0.1rem 0;">
+                                      <hr style="width: 80%; max-width: 900px; border: 2px solid rgb(81,0,0);">
+                                  </div>
+                                  <div id="info-filme" style="text-align: center; justify-content: center; margin: 0px 200px;"
+                                      <p>id: ${filme.id} <br>
+                                      <strong>Filme: ${filme.titulo}</strong><br>
+                                      <strong>Sinopse: </strong>${filme.conteudo}<br>
+                                      <strong>Gênero: </strong>${filme.categoria}<br>
+                                      <strong>Diretor: </strong>${filme.diretor}<br>
+                                      <strong>Data de lançamento: </strong>${filme.data}</p>
+                                  </div>`
+          }
+          else {
+              tela.innerHTML = `Filme não encontrado.`
+          }
+        });
+        
+    </script>
+</body>
+</html>

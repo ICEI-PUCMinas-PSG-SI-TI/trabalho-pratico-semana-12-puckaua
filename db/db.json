@@ -1,18 +1,287 @@
 {
-  "usuarios": [
+  "filmes": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": 1,
+      "titulo": "Blade Runner 2049",
+      "descricao": "Em Blade Runner 2049, o replicante K, um blade runner, descobre que uma replicante teve um filho — algo considerado impossível. Essa revelação ameaça o frágil equilíbrio entre humanos e replicantes, levando sua chefe a ordenar que ele encontre e elimine a criança para evitar uma possível guerra.",
+      "conteudo": "Em Blade Runner 2049, após os problemas enfrentados com os Nexus 8, uma nova espécie de replicantes é desenvolvida, de forma que seja mais obediente aos humanos. Um deles é K (Ryan Gosling), um blade runner que caça replicantes foragidos para a polícia de Los Angeles. Após encontrar Sapper Morton (Dave Bautista), K descobre um fascinante segredo: a replicante Rachel (Sean Young) teve um filho, mantido em sigilo até então. A possibilidade de que replicantes se reproduzam pode desencadear uma guerra deles com os humanos, o que faz com que a tenente Joshi (Robin Wright), chefe de K, o envie para encontrar e eliminar a criança.",
+      "categoria": "Ficção científica",
+      "diretor": "Denis Villeneuve",
+      "destaque": true,
+      "data": "2017-10-05",
+      "imagem_pincipal": "http://localhost:3000/assets/img/bladerunner.avif",
+      "imagem_destaque": "http://localhost:3000/assets/img/blade-runner-horizontal.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "http://localhost:3000/assets/img/ryan-gosling.jpeg",
+          "descricao": "http://localhost:3000/assets/Ryan Gosling"
+        },
+        {
+          "id": 2,
+          "src": "http://localhost:3000/assets/img/ana-armas.jpeg",
+          "descricao": "Ana de Armas"
+        },
+        {
+          "id": 3,
+          "src": "http://localhost:3000/assets/img/harrison.jpeg",
+          "descricao": "Harrison Ford"
+        },
+        {
+          "id": 4,
+          "src": "http://localhost:3000/assets/img/leto.jpeg",
+          "descricao": "Jared Leto"
+        }
+      ]
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": 2,
+      "titulo": "Clube da Luta",
+      "descricao": "Em Clube da Luta, Jack, um executivo insatisfeito e insone, encontra alívio em grupos de autoajuda. Sua vida muda ao conhecer o enigmático Tyler Durden, que o leva a fundar um clube secreto onde homens extravasam suas frustrações em lutas brutais — dando início a uma jornada sombria e transformadora.",
+      "conteudo": "Jack (Edward Norton) é um executivo jovem, trabalha como investigador de seguros, mora confortavelmente, mas ele está ficando cada vez mais insatisfeito com sua vida medíocre. Para piorar ele está enfrentando uma terrível crise de insônia, até que encontra uma cura inusitada para o sua falta de sono ao frequentar grupos de auto-ajuda. Nesses encontros ele passa a conviver com pessoas problemáticas como a viciada Marla Singer (Helena Bonham Carter) e a conhecer estranhos como Tyler Durden (Brad Pitt). Misterioso e cheio de ideias, Tyler apresenta para Jack um grupo secreto que se encontra para extravasar suas angústias e tensões através de violentos combates corporais.",
+      "categoria": "Ação",
+      "diretor": "David Fincher",
+      "destaque": true,
+      "data": "1999-10-15",
+      "imagem_pincipal": "http://localhost:3000/assets/img/clube.webp",
+      "imagem_destaque": "http://localhost:3000/assets/img/clube-horizontal.jpeg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "http://localhost:3000/assets/img/brad-pitt.jpeg",
+          "descricao": "Brad-Pitt"
+        },
+        {
+          "id": 2,
+          "src": "http://localhost:3000/assets/img/helena-carter.jpeg",
+          "descricao": "Helena Bonham Carter"
+        },
+        {
+          "id": 3,
+          "src": "http://localhost:3000/assets/img/leto.jpeg",
+          "descricao": "Jared Leto"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Pulp Fiction - Tempo de Violência",
+      "descricao": "Em Pulp Fiction, assassinos de aluguel e um boxeador se envolvem em situações caóticas e violentas sob as ordens de um temido gângster.",
+      "conteudo": "Vincent Vega (John Travolta) e Jules Winnfield (Samuel L. Jackson) são dois assassinos profissionais trabalham fazendo cobranças para Marsellus Wallace (Ving Rhames), um poderosos gângster. Vega é forçado a sair com a garota do chefe, temendo passar dos limites; enquanto isso, o pugilista Butch Coolidge (Bruce Willis) se mete em apuros por ganhar uma luta que deveria perder.",
+      "categoria": "Crime",
+      "diretor": "Quentin Tarantino",
+      "destaque": true,
+      "data": "1994-10-14",
+      "imagem_pincipal": "http://localhost:3000/assets/img/pulpfiction.jpg",
+      "imagem_destaque": "http://localhost:3000/assets/img/pulp-fiction-horizontal.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "img/festival_musica1.jpg",
+          "descricao": "Público no festival"
+        },
+        {
+          "id": 2,
+          "src": "img/festival_musica2.jpg",
+          "descricao": "Artista se apresentando"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Homem-Aranha: Através do Aranhaverso",
+      "descricao": "Miles Morales embarca em uma aventura multiversal onde encontra diferentes versões do Homem-Aranha, enfrentando desafios que testam suas convicções e seu papel como herói.",
+      "conteudo": "Na continuação de 'Homem-Aranha no Aranhaverso', Miles Morales (Shameik Moore) é lançado em uma jornada épica pelo multiverso. Lá, ele encontra uma equipe de diferentes Homens-Aranha liderada por Miguel O’Hara (Oscar Isaac), também conhecido como Homem-Aranha 2099. Quando os heróis entram em conflito sobre como lidar com uma nova ameaça, Miles precisa redefinir o que significa ser um verdadeiro herói e fazer escolhas difíceis para proteger aqueles que ama.",
+      "categoria": "Animação, Ação, Aventura",
+      "diretor": "Joaquim Dos Santos, Kemp Powers, Justin K. Thompson",
+      "destaque": false,
+      "data": "2023-06-01",
+      "imagem_pincipal": "http://localhost:3000/assets/img/miles.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "img/shameik-moore.jpg",
+          "descricao": "Shameik Moore"
+        },
+        {
+          "id": 2,
+          "src": "img/hailee-steinfeld.jpg",
+          "descricao": "Hailee Steinfeld"
+        },
+        {
+          "id": 3,
+          "src": "img/oscar-isaac.jpg",
+          "descricao": "Oscar Isaac"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "A Vingança Está na Moda",
+      "descricao": "Uma talentosa estilista retorna à sua cidade natal para se vingar daqueles que a maltrataram no passado, usando a moda como sua principal arma.",
+      "conteudo": "Tilly Dunnage (Kate Winslet) volta à pequena cidade rural australiana onde foi expulsa ainda jovem, agora uma estilista de sucesso em Paris. Com sua máquina de costura e muito estilo, ela transforma as mulheres locais e planeja se vingar daqueles que a acusaram injustamente de assassinato. Ao longo do caminho, descobre segredos da cidade e reencontra um possível amor, Teddy (Liam Hemsworth).",
+      "categoria": "Drama, Comédia",
+      "diretor": "Jocelyn Moorhouse",
+      "destaque": false,
+      "data": "2015-10-22",
+      "imagem_pincipal": "http://localhost:3000/assets/img/vinganca.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "http://localhost:3000/assets/img/kate-winslet.jpg",
+          "descricao": "Kate Winslet"
+        },
+        {
+          "id": 2,
+          "src": "img/liam-hemsworth.jpg",
+          "descricao": "Liam Hemsworth"
+        },
+        {
+          "id": 3,
+          "src": "img/hugo-weaving.jpg",
+          "descricao": "Hugo Weaving"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "As Crônicas de Nárnia: Príncipe Caspian",
+      "descricao": "Os irmãos Pevensie retornam a Nárnia para ajudar o jovem príncipe Caspian a recuperar o trono roubado por seu tio tirano.",
+      "conteudo": "Um ano após sua primeira aventura em Nárnia, os irmãos Pevensie são misteriosamente transportados de volta. Eles descobrem que séculos se passaram e que Nárnia está sob domínio do rei Miraz. Com a ajuda do legítimo herdeiro, Príncipe Caspian (Ben Barnes), e das criaturas mágicas, eles lutam para restaurar a paz no reino.",
+      "categoria": "Fantasia, Aventura",
+      "diretor": "Andrew Adamson",
+      "destaque": false,
+      "data": "2008-05-15",
+      "imagem_pincipal": "http://localhost:3000/assets/img/narnia.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "img/ben-barnes.jpg",
+          "descricao": "Ben Barnes"
+        },
+        {
+          "id": 2,
+          "src": "img/georgie-henley.jpg",
+          "descricao": "Georgie Henley"
+        },
+        {
+          "id": 3,
+          "src": "img/william-moseley.jpg",
+          "descricao": "William Moseley"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Yesterday",
+      "descricao": "Após um apagão global, um músico frustrado descobre que é o único que se lembra dos Beatles — e começa a cantar suas músicas como se fossem suas.",
+      "conteudo": "Jack Malik (Himesh Patel) é um músico sem sucesso que sofre um acidente durante um estranho apagão mundial. Ao acordar, percebe que ninguém mais se lembra dos Beatles. Aproveitando a situação, ele começa a tocar os sucessos da banda e se torna famoso — mas logo enfrenta dilemas morais e emocionais, principalmente com sua melhor amiga Ellie (Lily James).",
+      "categoria": "Comédia, Musical, Fantasia",
+      "diretor": "Danny Boyle",
+      "destaque": false,
+      "data": "2019-06-27",
+      "imagem_pincipal": "http://localhost:3000/assets/img/yesterday.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "img/himesh-patel.jpg",
+          "descricao": "Himesh Patel"
+        },
+        {
+          "id": 2,
+          "src": "img/lily-james.jpg",
+          "descricao": "Lily James"
+        },
+        {
+          "id": 3,
+          "src": "img/ed-sheeran.jpg",
+          "descricao": "Ed Sheeran"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Pânico VI",
+      "descricao": "Sobreviventes dos últimos ataques de Ghostface se mudam para Nova York, mas o assassino volta a aterrorizá-los com novos jogos e armadilhas.",
+      "conteudo": "Após os eventos de Woodsboro, os irmãos Sam (Melissa Barrera) e Tara Carpenter (Jenna Ortega) tentam recomeçar a vida em Nova York ao lado dos amigos Mindy e Chad. No entanto, uma nova série de assassinatos brutais começa, provando que o pesadelo de Ghostface está longe de acabar. Com novas regras e um cenário urbano, os sobreviventes precisam enfrentar verdades sombrias do passado.",
+      "categoria": "Terror, Suspense",
+      "diretor": "Matt Bettinelli-Olpin, Tyler Gillett",
+      "destaque": false,
+      "data": "2023-03-09",
+      "imagem_pincipal": "http://localhost:3000/assets/img/panico.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "img/jenna-ortega.jpg",
+          "descricao": "Jenna Ortega"
+        },
+        {
+          "id": 2,
+          "src": "img/melissa-barrera.jpg",
+          "descricao": "Melissa Barrera"
+        },
+        {
+          "id": 3,
+          "src": "img/courteney-cox.jpg",
+          "descricao": "Courteney Cox"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "Psicopata Americano",
+      "descricao": "Patrick Bateman é um jovem executivo de Wall Street com uma vida aparentemente perfeita — e um lado sombrio assassino.",
+      "conteudo": "Ambientado nos anos 1980, o filme acompanha Patrick Bateman (Christian Bale), um rico e narcisista executivo que leva uma vida dupla como serial killer. Obcecado por status, beleza e controle, Bateman esconde sua verdadeira natureza psicótica enquanto circula pela alta sociedade nova-iorquina. Sua sanidade começa a ruir, levando a consequências imprevisíveis.",
+      "categoria": "Terror, Suspense, Drama",
+      "diretor": "Mary Harron",
+      "destaque": false,
+      "data": "2000-04-14",
+      "imagem_pincipal": "http://localhost:3000/assets/img/psicopata.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "img/christian-bale.jpg",
+          "descricao": "Christian Bale"
+        },
+        {
+          "id": 2,
+          "src": "img/willem-dafoe.jpg",
+          "descricao": "Willem Dafoe"
+        },
+        {
+          "id": 3,
+          "src": "img/leto.jpeg",
+          "descricao": "Jared Leto"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "Percy Jackson e o Ladrão de Raios",
+      "descricao": "Um adolescente descobre ser filho de um deus grego e embarca em uma missão épica para evitar uma guerra entre os deuses do Olimpo.",
+      "conteudo": "Percy Jackson (Logan Lerman) leva uma vida comum até descobrir que é um semideus — filho de Poseidon. Acusado de roubar o raio-mestre de Zeus, ele parte em uma jornada com seus amigos Annabeth (Alexandra Daddario) e Grover (Brandon T. Jackson) para provar sua inocência e impedir uma guerra entre os deuses. Ao longo do caminho, enfrenta monstros da mitologia grega, descobre verdades sobre si mesmo e aprende a controlar seus poderes.",
+      "categoria": "Aventura, Fantasia",
+      "diretor": "Chris Columbus",
+      "destaque": false,
+      "data": "2010-02-11",
+      "imagem_pincipal": "http://localhost:3000/assets/img/percy.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "img/logan-lerman.jpg",
+          "descricao": "Logan Lerman"
+        },
+        {
+          "id": 2,
+          "src": "img/alexandra-daddario.jpg",
+          "descricao": "Alexandra Daddario"
+        },
+        {
+          "id": 3,
+          "src": "img/brandon-jackson.jpg",
+          "descricao": "Brandon T. Jackson"
+        }
+      ]
     }
   ]
 }

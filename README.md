@@ -5,10 +5,10 @@ Nesta atividade, você irá completar o projeto anterior permitindo cadastrar e 
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Kauã Felipe Soares Silva
+- Matricula: 895957
+- Proposta de projeto escolhida: Ctálogo de filmes
+- Breve descrição sobre seu projeto: The Catalogue é um catálogo de filmes, faz muito bem o que um catálogo faz: lista filmes.
 
 **Print do testes da API com Postman ou similar**
 
